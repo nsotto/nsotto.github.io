@@ -9,7 +9,7 @@
 <body class="bg-[rgba(188,67,67,1)]">
   <div class="flex items-center justify-center h-screen">
     <div class="flex flex-col items-center p-4">
-      <img id="imageDisplay" src="./images/image1.jpeg" alt="Me n Octavia" class="rounded-md h-[300px]" style="object-fit: cover;" />
+      <img id="imageDisplay" src="./images/image1.jpg" alt="Me n Octavia" class="rounded-md h-[300px]" style="object-fit: cover;" />
       <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#000000] my-4">Will you be my Valentine?</h2>
       <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
         <button id="yesButton"
@@ -47,7 +47,7 @@
     noButton.addEventListener('click', function() {
       if (noClickCount < 5) {
         noClickCount++;
-        imageDisplay.src = ./images/image2.jpeg
+        imageDisplay.src = './images/image2.jpg'
         buttonHeight += 35; // Increase height by 5px on each click
         buttonWidth += 35;
         fontSize += 25; // Increase font size by 1px on each click
@@ -61,7 +61,7 @@
     });
   
     yesButton.addEventListener('click', () => {
-      imageDisplay.src = './images/image3.jpeg'; // Change to image7.gif
+      imageDisplay.src = './images/image3.jpg'; // Change to image7.gif
       valentineQuestion.textContent = "Yippee!!! See you next weekend <3"; // Change the question text
       responseButtons.style.display = 'none'; // Hide both buttons
       confetti(); // Trigger confetti animation
